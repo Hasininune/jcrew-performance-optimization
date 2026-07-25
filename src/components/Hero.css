@@ -1,0 +1,240 @@
+/* -------------------- */
+/* HERO SECTION */
+/* -------------------- */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+
+    padding:90px 8%;
+
+    min-height:90vh;
+
+    background:#f8f6f2;
+}
+
+/* LEFT SIDE */
+
+.hero-content{
+
+    flex:1;
+
+    max-width:540px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    font-size:13px;
+
+    letter-spacing:4px;
+
+    color:#8b8b8b;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+}
+
+.hero-content h1{
+
+    font-size:62px;
+
+    line-height:1.05;
+
+    letter-spacing:-2px;
+
+    font-weight:600;
+
+    color:#111;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+    color:#5d5d5d;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+.primary-btn{
+
+    background:#111;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 36px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:#333;
+
+}
+
+.secondary-btn{
+
+    background:white;
+
+    color:#111;
+
+    border:1px solid #111;
+
+    padding:16px 36px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#111;
+
+    color:white;
+
+}
+
+/* FEATURES */
+
+.hero-features{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    font-size:14px;
+
+    color:#666;
+
+}
+
+/* IMAGE */
+
+.hero-image{
+
+    flex:1;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    border-radius:18px;
+
+    object-fit:cover;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/* -------------------- */
+/* TABLET */
+/* -------------------- */
+
+@media(max-width:992px){
+
+.hero{
+
+gap:40px;
+
+}
+
+.hero-content h1{
+
+font-size:50px;
+
+}
+
+}
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+
+@media(max-width:768px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:60px 25px;
+
+}
+
+.hero-content{
+
+max-width:100%;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-features{
+
+justify-content:center;
+
+}
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+}

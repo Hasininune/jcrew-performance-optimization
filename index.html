@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>J.Crew Performance Redesign | Frontend Optimization Study</title>
+
+  <meta
+    name="description"
+    content="A performance-focused J.Crew frontend recreation demonstrating optimized images, responsive design, accessibility, and modern web performance techniques."
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Critical hero/LCP image -->
+  <link
+    rel="preload"
+    href="/hero.webp"
+    as="image"
+    type="image/webp"
+    fetchpriority="high"
+  />
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
